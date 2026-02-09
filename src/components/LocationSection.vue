@@ -4,13 +4,11 @@
     <p>Visita nuestra Casa de Campaña</p>
     <div class="map-container">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15219.043697960686!2d-64.9166666!3d-19.1833333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93fbcf456424e64f%3A0xc367644d651030e4!2sTarabuco!5e0!3m2!1sen!2sbo!4v1675880000000!5m2!1sen!2sbo"
+        src="https://www.google.com/maps?q=-19.18328099,-64.91482187&t=k&z=17&output=embed"
         width="100%"
         height="450"
         style="border: 0"
-        allowfullscreen=""
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
       >
       </iframe>
     </div>

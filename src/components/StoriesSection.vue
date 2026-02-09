@@ -1,6 +1,6 @@
 <template>
   <section class="stories-section" id="stories">
-    <h2 class="section-title">Historias y Visitas</h2>
+    <h2 class="section-title">Recorridos y Visitas</h2>
     <div class="stories-container">
       <div v-for="(image, index) in images" :key="index" class="story-card">
         <img :src="image.src" :alt="image.alt" />
@@ -16,19 +16,31 @@
 // Importing images from assets if possible, or using direct paths if in public.
 // Since we are in Vite, we can import them.
 // Note: file names have spaces, renaming might be safer but import handles it usually.
-import img1 from "../assets/story1.jpeg";
-import img2 from "../assets/story2.jpeg";
+import img1 from "../assets/story1.jpg";
+import img2 from "../assets/story2.jpg";
+import img3 from "../assets/story3.jpg";
+import img4 from "../assets/story4.jpg";
 
 const images = [
   {
     src: img1,
     alt: "Visita a comunidad",
-    description: "Compartiendo con nuestras comunidades.",
+    description: "cayamboco",
   },
   {
     src: img2,
     alt: "Reunión vecinal",
-    description: "Escuchando las necesidades de nuestros vecinos.",
+    description: "Sindicato de comerciantes",
+  },
+  {
+    src: img3,
+    alt: "Visita a comunidad",
+    description: "Surima Chica",
+  },
+  {
+    src: img4,
+    alt: "Reunión vecinal",
+    description: "Sindicato de Mototaxistas",
   },
 ];
 </script>
@@ -79,10 +91,14 @@ const images = [
 }
 
 .story-info {
-  padding: 1rem;
+  padding: 0rem 0.3rem;
 }
 
 .story-info p {
   color: #555;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 </style>

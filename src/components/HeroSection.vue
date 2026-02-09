@@ -56,14 +56,12 @@
 .hero-content {
   position: relative;
   z-index: 1;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3rem;
   max-width: 1200px;
   background: transparent;
-  padding: 2.5rem;
 }
 
 .hero-image {
@@ -165,10 +163,13 @@
 }
 
 @media (min-width: 768px) {
+  .hero-section {
+    padding: 0 !important;
+  }
   .hero-content {
     flex-direction: row;
     text-align: left;
-    padding: 3rem;
+    padding: 1px !important;
   }
 
   .hero-image {
